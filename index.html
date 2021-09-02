@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <main>
+        <section class="container my-5">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search By Book Name" aria-label="book name"
+                    aria-describedby="basic-addon2" id="search-input">
+                <button onclick="loadBooks()" class="input-group-text btn btn-outline-secondary"
+                    id="search-btn">Search</button>
+            </div>
+            <div id="pre-loader" class="d-flex justify-content-center align-items-center d-none overflow-hidden">
+                <img src="images/Animated book.gif" alt="">
+            </div>
+            <div id="null-error">
+
+            </div>
+            <div>
+                <p id="search-num"></p>
+            </div>
+
+            <div id="book-list" class="row g-2 mt-5">
+            </div>
+
+        </section>
+    </main>
+    <!-- script js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
