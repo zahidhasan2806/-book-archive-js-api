@@ -16,7 +16,7 @@ const loadBooks = () => {
 
     // preLoader adding
     preLoader.classList.remove("d-none");
-    const url = `http://openlibrary.org/search.json?q=${searchText}`
+    const url = `https://openlibrary.org/search.json?q=${searchText}`
     fetch(url)
         .then(response => response.json())
         .then(data => displayBooks(data));
