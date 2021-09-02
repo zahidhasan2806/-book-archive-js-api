@@ -10,34 +10,48 @@
     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
+    <!-- custom css -->
+    <style>
+        body {
+            background-image: url(images/bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
 </head>
 
 <body>
     <main>
         <section class="container my-5">
+            <h1 class="fw-bolder  text-uppercase fst-italic text-center">Boi Ghor</h1>
+            <!-- Search Field  -->
             <div class="input-group mb-3 w-50 mx-auto">
-                <input type="text" class="form-control" placeholder="Search book........" aria-label="book name"
+
+                <input type="text" class="form-control" placeholder="Search your book........" aria-label="book name"
                     aria-describedby="basic-addon2" id="search-input">
-                <button onclick="loadBooks()" class="input-group-text btn btn-outline-secondary"
+                <button onclick="loadBooks()" class="input-group-text btn btn-success btn-outline-primary text-white"
                     id="search-btn">Search</button>
             </div>
+
+            <!-- preloader gif  -->
             <div id="pre-loader" class="d-flex justify-content-center align-items-center d-none overflow-hidden">
                 <img src="images/Animated book.gif" alt="">
             </div>
+            <!-- error container  -->
             <div id="null-error">
 
             </div>
             <div>
-                <p id="search-num"></p>
+                <p id="search-num" class=" fs-6 "></p>
             </div>
-
+            <!-- card for data  -->
             <div id="book-list" class="row g-2 mt-5">
             </div>
 
         </section>
     </main>
     <!-- script js -->
-    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
