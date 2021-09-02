@@ -41,7 +41,7 @@ const displayBooks = (data) => {
             const div = document.createElement("div");
             div.classList.add("col-md-4")
             div.innerHTML = `
-            <div class="card rounded" style = "width: 18rem; min-height:450px;" >
+            <div class="card rounded" style = "width: 23rem; min-height:450px;" >
                 <img style="height: 200px;" src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top" alt="...">
                     <div class="card-body" >
                         <h3 class="card-title">${book.title}</h3>
